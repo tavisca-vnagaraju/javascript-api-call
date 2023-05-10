@@ -11,6 +11,39 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1 class="heading">Welcome student</h1>
+    <h1 class="heading">Welcome to Form Filling</h1>
+    <div class="container">
+        <form autocomplete="off">
+            <div class="form-group mb-2">
+              <label for="student-id">Student Id</label>
+              <input name="student-id" type="text" class="form-control" id="student-id"  placeholder="Enter student id" 
+                    onkeyup="getStudentId(this)">
+            </div>
+            <div class="form-group mb-2">
+              <label for="student-name">Name</label>
+              <input name="student-name" type="text" class="form-control" id="student-name" placeholder="Student Name" 
+                    onkeyup="getStudentName(this)">
+            </div>
+            <div class="form-group mb-2">
+              <label for="student-age">Age</label>
+              <input name="student-age" type="number" class="form-control" id="student-age" placeholder="Student Age"
+                onkeyup="getStudentAge(this)">
+            </div>
+            <div class="form-group mb-2">
+              <label for="student-marks">Marks</label>
+              <input name="student-marks" type="number" class="form-control" id="student-marks" placeholder="Student Marks"
+                onkeyup="getStudentMarks(this)">
+            </div>
+            <div class="form-group mb-2">
+              <label for="student-department">Department</label>
+              <input name="student-department" type="text" class="form-control" id="student-department" placeholder="Student Department"
+                onkeyup="getStudentDepartment(this)">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+        </form>
+        <div style="text-align: center;margin-top: 3rem;">
+            <button onclick="getData()" class="btn btn-primary" > Get Data </button>
+        </div>
+    </div>
 </body>
 </html>
