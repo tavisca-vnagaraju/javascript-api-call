@@ -1,2 +1,2 @@
 # javascript-api-call
-this is about calling api using javascript
+this about making api call with javascript
